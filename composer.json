@@ -3,7 +3,9 @@
     "description": "A base Altis project to get started with",
     "type": "project",
     "require": {
-        "altis/altis": "^13.0.0"
+        "altis/altis": "^13.0.0",
+        "wpackagist-plugin/fakerpress": "^0.5.3",
+        "wpackagist-theme/twentytwentytwo": "*"
     },
     "require-dev": {
         "altis/local-server": "^13.0.0"
@@ -12,6 +14,12 @@
         {
             "name": "Human Made",
             "email": "hello@humanmade.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
         }
     ],
     "minimum-stability": "beta",
@@ -31,6 +39,9 @@
             "modules": {
                 "cloud": {
                     "redis": false
+                },
+                "cms": {
+                    "default-theme": "twentytwentytwo"
                 }
             }
         }
