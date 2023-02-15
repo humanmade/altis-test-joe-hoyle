@@ -38,7 +38,7 @@
         "altis": {
             "modules": {
                 "cloud": {
-                    "redis": false
+                    "redis": true
                 },
                 "cms": {
                     "default-theme": "twentytwentytwo"
